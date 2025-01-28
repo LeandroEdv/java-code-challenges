@@ -4,24 +4,24 @@ import java.util.Arrays;
 
 public interface BubbleSort {
     public static void main(String[] args) {
-        int[] vetor = {3, 6, 1, 8, 4, 62, 12, 7, 5};
+        int[] vector = {3, 6, 1, 8, 4, 62, 12, 7, 5};
         int aux;
-        boolean controle;
+        boolean control;
 
-        for (int i = 0; i < vetor.length; i++) {
-            controle = true;
-            for (int j = 0; j < vetor.length - 1; j++) {
-                if (vetor[j] > vetor[j + 1]) {
-                    aux = vetor[j];
-                    vetor[j] = vetor[j + 1];
-                    vetor[j + 1] = aux;
-                    controle = false;
+        for (int i = 0; i < vector.length; i++) {
+            control = true;
+            for (int j = 0; j < vector.length - 1; j++) {
+                if (vector[j] > vector[j + 1]) {
+                    aux = vector[j];
+                    vector[j] = vector[j + 1];
+                    vector[j + 1] = aux;
+                    control = false;
                 }
             }
-            if (controle) break;
+            if (control) break;
         }
 
-        System.out.println(Arrays.toString(vetor));
+        System.out.println(Arrays.toString(vector));
 
     }
 }
