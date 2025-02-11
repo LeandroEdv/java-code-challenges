@@ -2,7 +2,8 @@ package algoritmos;
 
 import java.util.Arrays;
 
-public interface BubbleSort {
+public class BubbleSort {
+
     public static void main(String[] args) {
         int[] vector = {3, 6, 1, 8, 4, 62, 12, 7, 5};
         int aux;
